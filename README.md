@@ -8,6 +8,7 @@ This guide focuses on creating a new GitHub repository and making your first cou
 <strong>Local machine</strong>: the PC/device that you're coding on.  
 <strong>Remote repository</strong>: the repository hosted by GitHub which can be pulled down to any authorized machine in the world.  
 <strong>Git</strong> is a technology for version management, whereas <strong>GitHub</strong> is a platform for Git provided by just one company of several others.  
+<strong>repo</strong>: short for 'repository'.  
 
 ### Prerequisites    
 - Have Git installed on your machine.  
@@ -20,7 +21,10 @@ This guide focuses on creating a new GitHub repository and making your first cou
 
 ### Steps  
 1. Intialize a new repository on the GitHub website.  
-2. Clone the repository to your local machine.  
+    - Choose whether the repo is public or private (public repositories are a good idea for showcasing your skills)  
+    - `gitignore` files are optional but may help to greatly declutter and minimize the size of your applications for more complex projects in the future.
+    - License: As a software development student I typically just select `The Unlicense`.  
+3. Clone the repository to your local machine.  
     - e.g. `git clone git@github.com:coryjquirk/GitDemoTest.git`  
     - This will only need to be done one time for this repository on this machine.  
     - This step initializes the empty repository to your machine.  
@@ -40,15 +44,17 @@ This guide focuses on creating a new GitHub repository and making your first cou
 Please see `bashcommands.txt` for a log of the commands used in my class demonstration on Thursday 10 March 2022.
 
 ### Notes on the above process  
-- At any point in these steps, use `git status` to get a report on whether the shell's present working directory 
-- All of the commands listed can take other optional arguments, but these command templates work for me.  
-- There will be a `.git` folder in every Git repository, but there is a default setting in Windows called "hidden files" which hides some of the more technical directories/files in your File Explorer. 
+- At any point in these steps, use `git status` to get a report on whether the shell's present working directory is up to date with the remote repo.  
+- All of the commands listed can take other optional arguments, but these command templates are what work for me.  
+- There will be a `.git` folder in every Git repository, but there is a default setting in Windows called "hidden files" which hides some of the more technical directories/files in your File Explorer. This contains Git configuration settings
     - To view hidden files, look for a setting in File Explorer.    
-- When you clone a repository to your local (this is also done with the `git init` command, but I use the above method as an alternative)
+- When you clone a repository to your local machine (this is also done with the `git init` command, but I use the above method as an alternative)
 
 ### General notes on Git 
-- GitHub along with many other platforms/companies have abandoned `master`/`slave` terminiolgy in the past few years. Previously, `master` was the default name for the primary Git branch, but this has been changed in favor of `main` as the default branch name. 
+- GitHub along with many other platforms/companies have abandoned `master`/`slave` terminology in the past few years. Previously, `master` was the default name for the primary Git branch, but this has been changed in favor of `main` as the default branch name. 
     - Some companies have replaced this with `parent`/`child` depending on the situation and technology.
+    - `git init` may still initialize a repository with `master` as the main branch name. 
+         - [To remedy this](https://superuser.com/questions/1419613/change-git-init-default-branch-name), use `git config --global init.defaultBranch main`
 - Fun fact, you can hit the `.` key while on the web page for any GitHub repository, and the code will open in a rudimentary Visual Studio Code-esque IDE. 
 
 ### Git BASH shell useful commands  
