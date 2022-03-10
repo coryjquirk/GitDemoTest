@@ -27,9 +27,9 @@ This guide focuses on creating a new GitHub repository and making your first cou
 3. Clone the repository to your local machine.  
     - e.g. `git clone git@github.com:coryjquirk/GitDemoTest.git`  
     - This will only need to be done one time for this repository on this machine.  
-    - This step initializes the empty repository to your machine.  
+    - This step initializes the empty repo to your machine.  
     - At this point, move the desired local files into the empty git directory (e.g. GitDemoTest). 
-4. Add your local files to the git repository.  
+4. Add your local files to the git repo.  
     - `git add .`  
         - [alternatively](https://git-scm.com/docs/git-add) `git add -A`  
     - When this step is complete, your modified files are now staged for the commit step.  
@@ -38,19 +38,33 @@ This guide focuses on creating a new GitHub repository and making your first cou
     - You must enter a commit message or this command will be rejected.  
 7. Push your committed files to the remote repository.  
     - `git push origin main`, `main` could be whichever branch.
-    - If you do not have the latest version of the branch on your local machine, you will need to perform a `git pull` first, otherwise this will kick you an error. 
+    - If you do not have the latest version of the branch on your local machine, you will need to perform a `git pull` first, otherwise trying to push will kick you an error. 
         - Be careful not to overwrite the changes you have made locally, and be aware of the differences between your local code and the remote repository's code.  
+8. Keep performing this cycle. keep the remote repo up to date
 
 Please see `bashcommands.txt` for a log of the commands used in my class demonstration on Thursday 10 March 2022.
 
 ### Notes on the above process  
 - At any point in these steps, use `git status` to get a report on whether the shell's present working directory is up to date with the remote repo.  
 - All of the commands listed can take other optional arguments, but these command templates are what work for me.  
-- There will be a `.git` folder in every Git repository, but there is a default setting in Windows called "hidden files" which hides some of the more technical directories/files in your File Explorer. This contains Git configuration settings
-    - To view hidden files, look for a setting in File Explorer.    
+- There will be a `.git` folder in every Git repository, but there is a default setting in Windows called "hidden files" which hides some of the more technical directories/files in your File Explorer. This contains Git configuration settings for this particular repo.
+    - To view hidden files, look for setting under View in File Explorer.    
 - When you clone a repository to your local machine (this is also done with the `git init` command, but I use the above method as an alternative)
 
-### General notes on Git 
+### Best practices
+Get in the habit of making short but meaningful commit messages to describe what you changed (e.g. 'added x new functionality' or 'removed references to unsupported dependency', not things like 'asdfasdfasdf' or 'tuesday commit')  
+In group projects, work on large project changes on a new branch and merge it once you know the code works.  
+In a complex applicatoin, use test deployments to ensure your hosting platform will accept the new changes.
+    - For example, there are a few GitHub repos I have configured to automatically deploy to [Heroku](https://id.heroku.com/login). 
+    - My [Portfolio website](https://github.com/coryjquirk/portfolio) is an app where I want an uninterrupted deployment, so I have a [test deployment](https://portfolio-tester.herokuapp.com/) sourced from a test branch and a [main deployment](https://coryjquirk.herokuapp.com/) sourced from the main branch. 
+        - This is similar to a CI/CD pipeline.   
+Communicate with other developers about which branch you are working on.  
+
+### Other general notes on Git 
+- GitHub offers free hosting via [GitHub Pages](https://pages.github.com/). To deploy an application, visit the webpage for your GitHub repo > Settings > Pages.
+    - example:  
+        - repo: https://github.com/coryjquirk/weather-dashboard/ 
+        - deployed page: https://coryjquirk.github.io/weather-dashboard/index.html
 - GitHub along with many other platforms/companies have abandoned `master`/`slave` terminology in the past few years. Previously, `master` was the default name for the primary Git branch, but this has been changed in favor of `main` as the default branch name. 
     - Some companies have replaced this with `parent`/`child` depending on the situation and technology.
     - `git init` may still initialize a repository with `master` as the main branch name. 
