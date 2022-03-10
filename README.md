@@ -6,9 +6,8 @@ This guide focuses on creating a new GitHub repository and making your first cou
 
 ### Definitions
 <strong>Local machine</strong>: the PC/device that you're coding on.  
-<strong>Remote repository</strong>: the repository hosted by GitHub which can be pulled down to any authorized machine in the world.
-<strong>Git</strong> is a technology for version management, whereas <strong>GitHub</strong> is a platform for Git provided by just one company of several others. 
-
+<strong>Remote repository</strong>: the repository hosted by GitHub which can be pulled down to any authorized machine in the world.  
+<strong>Git</strong> is a technology for version management, whereas <strong>GitHub</strong> is a platform for Git provided by just one company of several others.  
 
 ### Prerequisites    
 - Have Git installed on your machine.  
@@ -52,8 +51,15 @@ Please see `bashcommands.txt` for a log of the commands used in my class demonst
     - Some companies have replaced this with `parent`/`child` depending on the situation and technology.
 - Fun fact, you can hit the `.` key while on the web page for any GitHub repository, and the code will open in a rudimentary Visual Studio Code-esque IDE. 
 
-### Git BASH shell tips  
+### Git BASH shell useful commands  
+`cd`: change directory  
+`cd ..`: move back one step towards the root directory  
+`cd ../..`: move back two steps  
 
+`pwd`: present working directory    
+`ls` and `dir`: lists files and directories in the present working directory  
+`mkdir`: creates a directory  
+`touch`: creates a file 
 
 ### Future topics I may add
 - Creating a new branch to work on your own copy of the code, then merging this branch into the `main` branch when it's "ready for production".  
