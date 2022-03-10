@@ -1,0 +1,246 @@
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects
+$ pwd
+/c/users/coryq/ideaprojects
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects
+$ ls
+ArraysListDemo/    CoreJavaBasics/        InterfacesDemo/  ManagerEmployeeOOPexercise/  untitled/
+BankingScenarios/  CreatingAMonster/      JDBCdemo/        MavenDemo/                   Week4-Day4/
+CafeRouge/         HibernateJPABeginner/  JDBCtest2/       StreamsLesson/               Week5Day1/
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects
+$ dir
+ArraysListDemo    CoreJavaBasics        InterfacesDemo  ManagerEmployeeOOPexercise  untitled
+BankingScenarios  CreatingAMonster      JDBCdemo        MavenDemo                   Week4-Day4
+CafeRouge         HibernateJPABeginner  JDBCtest2       StreamsLesson               Week5Day1
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects
+$ git clone git@github.com:coryjquirk/GitDemoTest.git
+Cloning into 'GitDemoTest'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+Receiving objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects
+$ ls
+ArraysListDemo/    CreatingAMonster/      JDBCdemo/                    StreamsLesson/
+BankingScenarios/  GitDemoTest/           JDBCtest2/                   untitled/
+CafeRouge/         HibernateJPABeginner/  ManagerEmployeeOOPexercise/  Week4-Day4/
+CoreJavaBasics/    InterfacesDemo/        MavenDemo/                   Week5Day1/
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects
+$ cd GitDemoTest/
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ ls
+LICENSE  README.md
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ ls
+LICENSE  pom.xml  README.md  src/
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        pom.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git pull origin main
+From github.com:coryjquirk/GitDemoTest
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$
+warning: CRLF will be replaced by LF in .idea/.gitignore.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in .idea/compiler.xml.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in .idea/jarRepositories.xml.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in .idea/misc.xml.
+The file will have its original line endings in your working directory
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .idea/.gitignore
+        new file:   .idea/compiler.xml
+        new file:   .idea/jarRepositories.xml
+        new file:   .idea/misc.xml
+        new file:   pom.xml
+
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git commit -m "super fun initial commit"
+[main e77278a] super fun initial commit
+ 5 files changed, 66 insertions(+)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/compiler.xml
+ create mode 100644 .idea/jarRepositories.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 pom.xml
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.64 KiB | 1.64 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:coryjquirk/GitDemoTest.git
+   9fdfb19..e77278a  main -> main
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   src/main/java/teksystems/java/MyClass.java
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .idea/compiler.xml
+        modified:   src/main/java/teksystems/java/MyClass.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/vcs.xml
+
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git add .
+warning: CRLF will be replaced by LF in .idea/compiler.xml.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in src/main/java/teksystems/java/MyClass.java.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in .idea/vcs.xml.
+The file will have its original line endings in your working directory
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .idea/compiler.xml
+        new file:   .idea/vcs.xml
+        new file:   src/main/java/teksystems/java/MyClass.java
+
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git commit -m "super cool second commit"
+[main e7faf3a] super cool second commit
+ 3 files changed, 11 insertions(+)
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 src/main/java/teksystems/java/MyClass.java
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git push origin main
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (11/11), 940 bytes | 940.00 KiB/s, done.
+Total 11 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:coryjquirk/GitDemoTest.git
+   e77278a..e7faf3a  main -> main
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git add .
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git commit -m "adding text file"
+[main 640a632] adding text file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.txt
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+$
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git push origin main
+To github.com:coryjquirk/GitDemoTest.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:coryjquirk/GitDemoTest.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git pull origin main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+Unpacking objects: 100% (3/3), 657 bytes | 82.00 KiB/s, done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+From github.com:coryjquirk/GitDemoTest
+ * branch            main       -> FETCH_HEAD
+   e7faf3a..66c7657  main       -> origin/main
+Merge made by the 'recursive' strategy.
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+coryq@cq-HP MINGW64 /c/users/coryq/ideaprojects/GitDemoTest (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 535 bytes | 535.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:coryjquirk/GitDemoTest.git
+   66c7657..2dbd282  main -> main
