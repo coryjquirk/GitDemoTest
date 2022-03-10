@@ -51,10 +51,10 @@ Please see `bashcommands.txt` for a log of the commands used in my class demonst
     - To view hidden files, look for setting under View in File Explorer.    
 - When you clone a repository to your local machine (this is also done with the `git init` command, but I use the above method as an alternative)
 
-### Best practices
+### Best practices  
 Get in the habit of making short but meaningful commit messages to describe what you changed (e.g. 'added x new functionality' or 'removed references to unsupported dependency', not things like 'asdfasdfasdf' or 'tuesday commit')  
 In group projects, work on large project changes on a new branch and merge it once you know the code works.  
-In a complex applicatoin, use test deployments to ensure your hosting platform will accept the new changes.
+For complex applications, use test deployments to ensure your hosting platform will accept the new changes.
     - For example, there are a few GitHub repos I have configured to automatically deploy to [Heroku](https://id.heroku.com/login). 
     - My [Portfolio website](https://github.com/coryjquirk/portfolio) is an app where I want an uninterrupted deployment, so I have a [test deployment](https://portfolio-tester.herokuapp.com/) sourced from a test branch and a [main deployment](https://coryjquirk.herokuapp.com/) sourced from the main branch. 
         - This is similar to a CI/CD pipeline.   
@@ -69,7 +69,11 @@ Communicate with other developers about which branch you are working on.
     - Some companies have replaced this with `parent`/`child` depending on the situation and technology.
     - `git init` may still initialize a repository with `master` as the main branch name. 
          - [To remedy this](https://superuser.com/questions/1419613/change-git-init-default-branch-name), use `git config --global init.defaultBranch main`
-- Fun fact, you can hit the `.` key while on the web page for any GitHub repository, and the code will open in a rudimentary Visual Studio Code-esque IDE. 
+- Fun fact, you can hit the `.` key while on the web page for any GitHub repository, and the code will open in a rudimentary Visual Studio Code-esque IDE.   
+![GitHub Dev screenshot](/github-dot-dev-screenshot.png)
+
+- To change your default IntelliJ terminal to Git BASH: File> Settings > Tools > Terminal > Shell path  
+![IntelliJ default shell](/IntelliJ-shell-screenshot.png)
 
 ### Git BASH shell useful commands  
 `cd`: change directory  
