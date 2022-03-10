@@ -12,7 +12,6 @@ This guide focuses on creating a new GitHub repository and making your first cou
 
 ### Prerequisites    
 - Have Git installed on your machine.  
-    - GitHub.com > Your repositories > New
 - Authenticate your GitHub account.
 - SSH keys  
     - GitHub.com > Settings > SSH and GPG Keys  
@@ -21,6 +20,7 @@ This guide focuses on creating a new GitHub repository and making your first cou
 
 ### Steps  
 1. Intialize a new repository on the GitHub website.  
+    GitHub.com > Your repositories > New  
     - Choose whether the repo is public or private (public repositories are a good idea for showcasing your skills)  
     - `gitignore` files are optional but may help to greatly declutter and minimize the size of your applications for more complex projects in the future.
     - License: As a software development student I typically just select `The Unlicense`.  
