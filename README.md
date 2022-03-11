@@ -40,18 +40,18 @@ This guide focuses on creating a new GitHub repository and making your first cou
     - `git push origin main`, `main` could be whichever branch.
     - If you do not have the latest version of the branch on your local machine, you will need to perform a `git pull` first, otherwise trying to push will kick you an error. 
         - Be careful not to overwrite the changes you have made locally, and be aware of the differences between your local code and the remote repository's code.  
-8. Keep performing this cycle. keep the remote repo up to date
+8. Keep performing this cycle as you make improvements your code. Keep the remote repo up to date and make frequent commitments of working code.
 
 Please see `bashcommands.txt` for a log of the commands used in my class demonstration on Thursday 10 March 2022.
 
 ### Notes on the above process  
 - At any point in these steps, use `git status` to get a report on whether the shell's present working directory is up to date with the remote repo.  
 - All of the commands listed can take other optional arguments, but these command templates are what work for me.  
-- There will be a `.git` folder in every Git repository, but there is a default setting in Windows called "hidden files" which hides some of the more technical directories/files in your File Explorer. This contains Git configuration settings for this particular repo.
-    - To view hidden files, look for setting under View in File Explorer.    
-- When you clone a repository to your local machine (this is also done with the `git init` command, but I use the above method as an alternative)
+- When you clone a repository to your local machine, a  `.git` folder will be created, which identifies that directory as a repo on your machine (this is also done through the `git init` command, but I use the above method as an alternative). However, there is a default setting in Windows called "hidden files" which hides some of the more technical directories/files in your File Explorer. This contains Git configuration settings for this particular repo.
+    - To view hidden files, look for the setting to reveal them under View in File Explorer.    
 
 ### Best practices  
+Never commmit broken code.  
 Get in the habit of making short but meaningful commit messages to describe what you changed (e.g. 'added x new functionality' or 'removed references to unsupported dependency', not things like 'asdfasdfasdf' or 'tuesday commit')  
 In group projects, work on large project changes on a new branch and merge it once you know the code works.  
 For complex applications, use test deployments to ensure your hosting platform will accept the new changes.
