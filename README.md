@@ -19,28 +19,28 @@ This guide focuses on creating a new GitHub repository and making your first cou
 - Have some kind of project files on your local machine that you want to store in a GitHub repository.  
 
 ### Steps  
-1. Intialize a new repository on the GitHub website.  
+1. Initialize a new repository on the GitHub website.  
     GitHub.com > Your repositories > New  
     - Choose whether the repo is public or private (public repositories are a good idea for showcasing your skills)  
     - `gitignore` files are optional but may help to greatly declutter and minimize the size of your applications for more complex projects in the future.
     - License: As a software development student I typically just select `The Unlicense`.  
-3. Clone the repository to your local machine.  
+2. Clone the repository to your local machine.  
     - e.g. `git clone git@github.com:coryjquirk/GitDemoTest.git`  
     - This will only need to be done one time for this repository on this machine.  
     - This step initializes the empty repo to your machine.  
     - At this point, move the desired local files into the empty git directory (e.g. GitDemoTest). 
-4. Add your local files to the git repo.  
+3. Add your local files to the git repo.  
     - `git add .`  
         - [alternatively](https://git-scm.com/docs/git-add) `git add -A`  
     - When this step is complete, your modified files are now staged for the commit step.  
-5. Commit the staged files.  
+4. Commit the staged files.  
     - `git commit -m "my commit message"`  
     - You must enter a commit message or this command will be rejected.  
-7. Push your committed files to the remote repository.  
+5. Push your committed files to the remote repository.  
     - `git push origin main`, `main` could be whichever branch.
     - If you do not have the latest version of the branch on your local machine, you will need to perform a `git pull` first, otherwise trying to push will kick you an error. 
         - Be careful not to overwrite the changes you have made locally, and be aware of the differences between your local code and the remote repository's code.  
-8. Keep performing this cycle as you make improvements your code. Keep the remote repo up to date and make frequent commitments of working code.
+6. Keep performing this cycle as you make improvements to your code. Keep the remote repo up to date and make frequent commitments of working code.
 
 Please see `bashcommands.txt` for a log of the commands used in my class demonstration on Thursday 10 March 2022.
 
@@ -51,13 +51,17 @@ Please see `bashcommands.txt` for a log of the commands used in my class demonst
     - To view hidden files, look for the setting to reveal them under View in File Explorer.    
 
 ### Best practices  
-Never commmit broken code.  
+Never commit broken code.  
+
 Get in the habit of making short but meaningful commit messages to describe what you changed (e.g. 'added x new functionality' or 'removed references to unsupported dependency', not things like 'asdfasdfasdf' or 'tuesday commit')  
+
 In group projects, work on large project changes on a new branch and merge it once you know the code works.  
+
 For complex applications, use test deployments to ensure your hosting platform will accept the new changes.
     - For example, there are a few GitHub repos I have configured to automatically deploy to [Heroku](https://id.heroku.com/login). 
     - My [Portfolio website](https://github.com/coryjquirk/portfolio) is an app where I want an uninterrupted deployment, so I have a [test deployment](https://portfolio-tester.herokuapp.com/) sourced from a test branch and a [main deployment](https://coryjquirk.herokuapp.com/) sourced from the main branch. 
         - This is similar to a CI/CD pipeline.   
+        
 Communicate with other developers about which branch you are working on.  
 
 ### Other general notes on Git 
