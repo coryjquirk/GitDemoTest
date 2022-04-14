@@ -7,7 +7,7 @@ This guide focuses on creating a new GitHub repository and making your first cou
 ### Definitions
 <strong>Local machine</strong>: the PC/device that you're coding on.  
 <strong>Remote repository</strong>: the repository hosted by GitHub which can be pulled down to any authorized machine in the world.  
-<strong>Git</strong> is a technology for version management, whereas <strong>GitHub</strong> is a platform for Git provided by just one company of several others.  
+<strong>Git</strong> is a technology for version management, whereas <strong>GitHub</strong> is a platform for Git provided by just one company of several others (a couple platforms I'm aware of are GitLab and BitBucket).  
 <strong>repo</strong>: short for 'repository'.  
 
 ### Prerequisites    
